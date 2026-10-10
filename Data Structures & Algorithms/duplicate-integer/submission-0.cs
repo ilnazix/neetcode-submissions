@@ -1,0 +1,13 @@
+public class Solution {
+    public bool hasDuplicate(int[] nums) {
+        var set = new HashSet<int>();
+
+        foreach(var n in nums){
+            if(!set.Add(n)){
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
